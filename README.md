@@ -1,3 +1,3 @@
 # Factorama
 
-This is an iOS facting game, created by students at Southern Virginia University.
+This is an iOS-based factoring game, created by students at Southern Virginia University.
