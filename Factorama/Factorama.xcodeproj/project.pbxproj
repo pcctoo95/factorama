@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990D82266579A0045BD36 /* AppDelegate.swift */; };
+		3FE990DB2266579A0045BD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990DA2266579A0045BD36 /* ViewController.swift */; };
+		3FE990DE2266579A0045BD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE990DC2266579A0045BD36 /* Main.storyboard */; };
+		3FE990E02266579B0045BD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE990DF2266579B0045BD36 /* Assets.xcassets */; };
+		3FE990E32266579B0045BD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */; };
+		3FE990EE2266579B0045BD36 /* FactoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990ED2266579B0045BD36 /* FactoramaTests.swift */; };
+		3FE990F92266579B0045BD36 /* FactoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990F82266579B0045BD36 /* FactoramaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FE990EA2266579B0045BD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE990CD226657990045BD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE990D4226657990045BD36;
+			remoteInfo = Factorama;
+		};
+		3FE990F52266579B0045BD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE990CD226657990045BD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE990D4226657990045BD36;
+			remoteInfo = Factorama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FE990D5226657990045BD36 /* Factorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE990D82266579A0045BD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FE990DA2266579A0045BD36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FE990DD2266579A0045BD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FE990DF2266579B0045BD36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FE990E22266579B0045BD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FE990E42266579B0045BD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE990E92266579B0045BD36 /* FactoramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE990ED2266579B0045BD36 /* FactoramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoramaTests.swift; sourceTree = "<group>"; };
+		3FE990EF2266579B0045BD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE990F42266579B0045BD36 /* FactoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE990F82266579B0045BD36 /* FactoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoramaUITests.swift; sourceTree = "<group>"; };
+		3FE990FA2266579B0045BD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE990D2226657990045BD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990E62266579B0045BD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990F12266579B0045BD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FE990CC226657990045BD36 = {
+			isa = PBXGroup;
+			children = (
+				3FE990D7226657990045BD36 /* Factorama */,
+				3FE990EC2266579B0045BD36 /* FactoramaTests */,
+				3FE990F72266579B0045BD36 /* FactoramaUITests */,
+				3FE990D6226657990045BD36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE990D6226657990045BD36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE990D5226657990045BD36 /* Factorama.app */,
+				3FE990E92266579B0045BD36 /* FactoramaTests.xctest */,
+				3FE990F42266579B0045BD36 /* FactoramaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE990D7226657990045BD36 /* Factorama */ = {
+			isa = PBXGroup;
+			children = (
+				3FE990D82266579A0045BD36 /* AppDelegate.swift */,
+				3FE990DA2266579A0045BD36 /* ViewController.swift */,
+				3FE990DC2266579A0045BD36 /* Main.storyboard */,
+				3FE990DF2266579B0045BD36 /* Assets.xcassets */,
+				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
+				3FE990E42266579B0045BD36 /* Info.plist */,
+			);
+			path = Factorama;
+			sourceTree = "<group>";
+		};
+		3FE990EC2266579B0045BD36 /* FactoramaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE990ED2266579B0045BD36 /* FactoramaTests.swift */,
+				3FE990EF2266579B0045BD36 /* Info.plist */,
+			);
+			path = FactoramaTests;
+			sourceTree = "<group>";
+		};
+		3FE990F72266579B0045BD36 /* FactoramaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE990F82266579B0045BD36 /* FactoramaUITests.swift */,
+				3FE990FA2266579B0045BD36 /* Info.plist */,
+			);
+			path = FactoramaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE990D4226657990045BD36 /* Factorama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE990FD2266579B0045BD36 /* Build configuration list for PBXNativeTarget "Factorama" */;
+			buildPhases = (
+				3FE990D1226657990045BD36 /* Sources */,
+				3FE990D2226657990045BD36 /* Frameworks */,
+				3FE990D3226657990045BD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Factorama;
+			productName = Factorama;
+			productReference = 3FE990D5226657990045BD36 /* Factorama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FE990E82266579B0045BD36 /* FactoramaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE991002266579B0045BD36 /* Build configuration list for PBXNativeTarget "FactoramaTests" */;
+			buildPhases = (
+				3FE990E52266579B0045BD36 /* Sources */,
+				3FE990E62266579B0045BD36 /* Frameworks */,
+				3FE990E72266579B0045BD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE990EB2266579B0045BD36 /* PBXTargetDependency */,
+			);
+			name = FactoramaTests;
+			productName = FactoramaTests;
+			productReference = 3FE990E92266579B0045BD36 /* FactoramaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FE990F32266579B0045BD36 /* FactoramaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE991032266579B0045BD36 /* Build configuration list for PBXNativeTarget "FactoramaUITests" */;
+			buildPhases = (
+				3FE990F02266579B0045BD36 /* Sources */,
+				3FE990F12266579B0045BD36 /* Frameworks */,
+				3FE990F22266579B0045BD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE990F62266579B0045BD36 /* PBXTargetDependency */,
+			);
+			name = FactoramaUITests;
+			productName = FactoramaUITests;
+			productReference = 3FE990F42266579B0045BD36 /* FactoramaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE990CD226657990045BD36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.joshuakneilson;
+				TargetAttributes = {
+					3FE990D4226657990045BD36 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3FE990E82266579B0045BD36 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3FE990D4226657990045BD36;
+					};
+					3FE990F32266579B0045BD36 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3FE990D4226657990045BD36;
+					};
+				};
+			};
+			buildConfigurationList = 3FE990D0226657990045BD36 /* Build configuration list for PBXProject "Factorama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FE990CC226657990045BD36;
+			productRefGroup = 3FE990D6226657990045BD36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE990D4226657990045BD36 /* Factorama */,
+				3FE990E82266579B0045BD36 /* FactoramaTests */,
+				3FE990F32266579B0045BD36 /* FactoramaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE990D3226657990045BD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE990E32266579B0045BD36 /* LaunchScreen.storyboard in Resources */,
+				3FE990E02266579B0045BD36 /* Assets.xcassets in Resources */,
+				3FE990DE2266579A0045BD36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990E72266579B0045BD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990F22266579B0045BD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE990D1226657990045BD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE990DB2266579A0045BD36 /* ViewController.swift in Sources */,
+				3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990E52266579B0045BD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE990EE2266579B0045BD36 /* FactoramaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE990F02266579B0045BD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE990F92266579B0045BD36 /* FactoramaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FE990EB2266579B0045BD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE990D4226657990045BD36 /* Factorama */;
+			targetProxy = 3FE990EA2266579B0045BD36 /* PBXContainerItemProxy */;
+		};
+		3FE990F62266579B0045BD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE990D4226657990045BD36 /* Factorama */;
+			targetProxy = 3FE990F52266579B0045BD36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FE990DC2266579A0045BD36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE990DD2266579A0045BD36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE990E22266579B0045BD36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE990FB2266579B0045BD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FE990FC2266579B0045BD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE990FE2266579B0045BD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = Factorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.Factorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FE990FF2266579B0045BD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = Factorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.Factorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FE991012266579B0045BD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = FactoramaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.FactoramaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Factorama.app/Factorama";
+			};
+			name = Debug;
+		};
+		3FE991022266579B0045BD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = FactoramaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.FactoramaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Factorama.app/Factorama";
+			};
+			name = Release;
+		};
+		3FE991042266579B0045BD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = FactoramaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.FactoramaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factorama;
+			};
+			name = Debug;
+		};
+		3FE991052266579B0045BD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VCACKGT6G2;
+				INFOPLIST_FILE = FactoramaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joshuakneilson.FactoramaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factorama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE990D0226657990045BD36 /* Build configuration list for PBXProject "Factorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE990FB2266579B0045BD36 /* Debug */,
+				3FE990FC2266579B0045BD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE990FD2266579B0045BD36 /* Build configuration list for PBXNativeTarget "Factorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE990FE2266579B0045BD36 /* Debug */,
+				3FE990FF2266579B0045BD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE991002266579B0045BD36 /* Build configuration list for PBXNativeTarget "FactoramaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE991012266579B0045BD36 /* Debug */,
+				3FE991022266579B0045BD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE991032266579B0045BD36 /* Build configuration list for PBXNativeTarget "FactoramaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE991042266579B0045BD36 /* Debug */,
+				3FE991052266579B0045BD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE990CD226657990045BD36 /* Project object */;
+}
