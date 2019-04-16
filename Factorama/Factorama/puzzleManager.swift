@@ -9,13 +9,23 @@
 import Foundation
 
 class PuzzleManager{
-    var puzzles : Array<puzzle>
-    var currentPuzzle: Int
+    var easyPuzzles : Array<puzzle>
+    var mediumPuzzles : Array<puzzle>
+    var hardPuzzles : Array<puzzle>
+    var currentPuzzle: puzzle
     var totalScore :Int{
         get{
             var runningTotal = 0.0
             var maxTotal = 0.0
-            for x in puzzles{
+            for x in easyPuzzles{
+                runningTotal += Double(x.currentScore)
+                maxTotal += Double(x.possibleScore)
+            }
+            for x in mediumPuzzles{
+                runningTotal += Double(x.currentScore)
+                maxTotal += Double(x.possibleScore)
+            }
+            for x in hardPuzzles{
                 runningTotal += Double(x.currentScore)
                 maxTotal += Double(x.possibleScore)
             }
@@ -25,21 +35,14 @@ class PuzzleManager{
         
         
     }
-    var goodNumbers = [12, 18, 20, 24, 28, 30, 32, 36, 40, 42, 44, 45, 48, 50, 52, 54, 56, 60, 63, 64, 66, 68, 70, 72, 75, 76, 78, 80, 84, 88, 90, 92, 96, 98, 99, 100, 102, 104, 105, 108, 110, 112, 114, 116, 117, 120, 124, 126, 128, 130, 132, 135, 136, 138, 140, 144]
     init(){
-        puzzles = Array<puzzle>()
+        easyPuzzles = Array<puzzle>()
         var usedArray = Array<Int>()
-        for _ in 0...5{
-            var index = 0
-            
-            while index == 0 || usedArray.contains(index){
-                index = Int.random(in: 0..<goodNumbers.count)
-            }
-            usedArray.append(index)
-            puzzles.append(puzzle(numToSplit: self.goodNumbers[index]))
+        for _ in 1...144{
+            let puzzle puzzles.append(puzzle(numToSplit: self.goodNumbers[index]))
             
         }
-        currentPuzzle = 0
+        currentPuzzle = easyPuzzles[0]
         
     }
     
