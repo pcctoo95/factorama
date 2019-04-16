@@ -14,6 +14,8 @@
 		3FE990E32266579B0045BD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */; };
 		3FE990EE2266579B0045BD36 /* FactoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990ED2266579B0045BD36 /* FactoramaTests.swift */; };
 		3FE990F92266579B0045BD36 /* FactoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990F82266579B0045BD36 /* FactoramaUITests.swift */; };
+		3FE9910722665DA30045BD36 /* FactorGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9910622665DA30045BD36 /* FactorGame.swift */; };
+		3FE9910922665DAC0045BD36 /* factoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9910822665DAC0045BD36 /* factoring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3FE990F42266579B0045BD36 /* FactoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE990F82266579B0045BD36 /* FactoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoramaUITests.swift; sourceTree = "<group>"; };
 		3FE990FA2266579B0045BD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE9910622665DA30045BD36 /* FactorGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorGame.swift; sourceTree = "<group>"; };
+		3FE9910822665DAC0045BD36 /* factoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = factoring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				3FE990D82266579A0045BD36 /* AppDelegate.swift */,
 				3FE990DA2266579A0045BD36 /* ViewController.swift */,
 				3FE990DC2266579A0045BD36 /* Main.storyboard */,
+				3FE9910822665DAC0045BD36 /* factoring.swift */,
 				3FE990DF2266579B0045BD36 /* Assets.xcassets */,
 				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
 				3FE990E42266579B0045BD36 /* Info.plist */,
+				3FE9910622665DA30045BD36 /* FactorGame.swift */,
 			);
 			path = Factorama;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				3FE990DB2266579A0045BD36 /* ViewController.swift in Sources */,
 				3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */,
+				3FE9910722665DA30045BD36 /* FactorGame.swift in Sources */,
+				3FE9910922665DAC0045BD36 /* factoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
