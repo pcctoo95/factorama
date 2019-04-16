@@ -9,10 +9,10 @@
 import Foundation
 
 class PuzzleManager{
-    var easyPuzzles : Array<puzzle>
-    var mediumPuzzles : Array<puzzle>
-    var hardPuzzles : Array<puzzle>
-    var currentPuzzle: puzzle
+    var easyPuzzles : Array<Puzzle>
+    var mediumPuzzles : Array<Puzzle>
+    var hardPuzzles : Array<Puzzle>
+    var currentPuzzle: Puzzle
     var totalScore :Int{
         get{
             var runningTotal = 0.0
@@ -36,10 +36,11 @@ class PuzzleManager{
         
     }
     init(){
-        easyPuzzles = Array<puzzle>()
+        easyPuzzles = Array<Puzzle>()
         var usedArray = Array<Int>()
-        for _ in 1...144{
-            let puzzle puzzles.append(puzzle(numToSplit: self.goodNumbers[index]))
+        for x in 1...144{
+            let puzzle = Puzzle(numToSplit: x)
+            
             
         }
         currentPuzzle = easyPuzzles[0]
@@ -48,7 +49,7 @@ class PuzzleManager{
     
     func submitFactor(lhs: Int, rhs: Int)->Bool{
         let f = Factor(left: lhs, right: rhs)
-        if let index = puzzles[currentPuzzle].possibleFactors.firstIndex(of: f){
+        if let index = currentPuzzle.possibleFactors.firstIndex(of: f){
             puzzles[currentPuzzle].foundFactors.append(f)
             puzzles[currentPuzzle].possibleFactors.remove(at: index)
             return true

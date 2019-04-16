@@ -9,18 +9,24 @@
 import Foundation
 
 
-class puzzle{
+class Puzzle{
     var numToSplit : Int
     var foundFactors : [Factor]
     var possibleFactors : [Factor]
     var leftOfset: Int
     var rightOfset : Int
+    var possibleScore: Int
+    var numFactors : Int {
+        get{
+            return foundFactors.count + possibleFactors.count
+        }
+    }
     var currentScore:Int {
         get{
             return min(totalR, totalL)
         }
     }
-    var possibleScore: Int
+    
     var imbalance : Int {
         get{
             var left = leftOfset
