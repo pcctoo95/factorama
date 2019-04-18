@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F86DA29226660700099D0A6 /* puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA27226660700099D0A6 /* puzzle.swift */; };
 		3F86DA2A226660700099D0A6 /* puzzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA28226660700099D0A6 /* puzzleManager.swift */; };
+		3F86DA2C2268F5C10099D0A6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */; };
 		3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990D82266579A0045BD36 /* AppDelegate.swift */; };
 		3FE990DB2266579A0045BD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990DA2266579A0045BD36 /* ViewController.swift */; };
 		3FE990DE2266579A0045BD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE990DC2266579A0045BD36 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3F86DA27226660700099D0A6 /* puzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzle.swift; sourceTree = "<group>"; };
 		3F86DA28226660700099D0A6 /* puzzleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzleManager.swift; sourceTree = "<group>"; };
+		3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3FE990D5226657990045BD36 /* Factorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE990D82266579A0045BD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE990DA2266579A0045BD36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
 				3FE990E42266579B0045BD36 /* Info.plist */,
 				3FE9910622665DA30045BD36 /* FactorGame.swift */,
+				3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */,
 			);
 			path = Factorama;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				3F86DA2A226660700099D0A6 /* puzzleManager.swift in Sources */,
 				3F86DA29226660700099D0A6 /* puzzle.swift in Sources */,
 				3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */,
+				3F86DA2C2268F5C10099D0A6 /* SecondViewController.swift in Sources */,
 				3FE9910722665DA30045BD36 /* FactorGame.swift in Sources */,
 				3FE9910922665DAC0045BD36 /* factoring.swift in Sources */,
 			);

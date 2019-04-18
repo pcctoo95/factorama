@@ -89,7 +89,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     
     @IBAction func StartButtonDidPress(_ sender: UIButton) {
-        
+        switch factorGame.currentSetting{
+        case 0:
+            manager.currentPuzzle = manager.easyPuzzles.first(where: {$0.numToSplit == factorGame.currentNumber})!
+            break
+        case 1:
+            manager.currentPuzzle = manager.mediumPuzzles.first(where: {$0.numToSplit == factorGame.currentNumber})!
+            break
+        default:
+            manager.currentPuzzle = manager.hardPuzzles.first(where: {$0.numToSplit == factorGame.currentNumber})!
+            break
+        }
     }
     
     
