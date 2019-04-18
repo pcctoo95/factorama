@@ -9,9 +9,11 @@
 import Foundation
 
 class PuzzleManager{
-    var easyPuzzles : Array<Puzzle>
-    var mediumPuzzles : Array<Puzzle>
-    var hardPuzzles : Array<Puzzle>
+    var easyPuzzles = Array<Puzzle>()
+    var mediumPuzzles = Array<Puzzle>()
+    var hardPuzzles = Array<Puzzle>()
+    var currentSetting = 0
+    var dificulty = ["Easy", "Medium", "Hard"]
     var currentPuzzle: Puzzle
     var totalScore :Int{
         get{
@@ -36,9 +38,6 @@ class PuzzleManager{
         
     }
     init(){
-        easyPuzzles = Array<Puzzle>()
-        mediumPuzzles = Array<Puzzle>()
-        hardPuzzles = Array<Puzzle>()
         for x in 1...144{
             let puzzle = Puzzle(numToSplit: x)
             switch(puzzle.numFactors){
@@ -49,7 +48,6 @@ class PuzzleManager{
             default:
                 hardPuzzles.append(puzzle)
             }
-            
         }
         currentPuzzle = easyPuzzles[0]
     }
@@ -66,27 +64,21 @@ class PuzzleManager{
     
     
     func setPuzzle(difficulty: String, num: Int){
+        var puzzle : Puzzle?
         switch(difficulty){
         case "Easy":
-            if  let puzzle = easyPuzzles.first(where: {$0.numToSplit == num}){
-                currentPuzzle = puzzle
-            }else{
-                print("Called wrong puzzle");
-            }
+            puzzle = easyPuzzles[num]
         case "Medium":
-            if  let puzzle = mediumPuzzles.first(where: {$0.numToSplit == num}){
-                currentPuzzle = puzzle
-            }else{
-                print("Called wrong puzzle");
-            }
+            puzzle = mediumPuzzles[num]
         case "Hard":
-            if  let puzzle = hardPuzzles.first(where: {$0.numToSplit == num}){
-                currentPuzzle = puzzle
-            }else{
-                print("Called wrong puzzle");
-            }
+            puzzle = hardPuzzles[num]
         default:
-            print("Unable to set puzzle");
+            puzzle = nil
+        }
+        if puzzle != nil {
+            currentPuzzle = puzzle!
+        }else{
+            print("Unable to set puzzle")
         }
     }
     
