@@ -37,21 +37,28 @@ class PuzzleManager{
     }
     init(){
         easyPuzzles = Array<Puzzle>()
-        var usedArray = Array<Int>()
+        mediumPuzzles = Array<Puzzle>()
+        hardPuzzles = Array<Puzzle>()
         for x in 1...144{
             let puzzle = Puzzle(numToSplit: x)
-            
+            switch(puzzle.numFactors){
+            case 0...2:
+                easyPuzzles.append(puzzle)
+            case 3...4:
+                mediumPuzzles.append(puzzle)
+            default:
+                hardPuzzles.append(puzzle)
+            }
             
         }
         currentPuzzle = easyPuzzles[0]
-        
     }
     
     func submitFactor(lhs: Int, rhs: Int)->Bool{
         let f = Factor(left: lhs, right: rhs)
         if let index = currentPuzzle.possibleFactors.firstIndex(of: f){
-            puzzles[currentPuzzle].foundFactors.append(f)
-            puzzles[currentPuzzle].possibleFactors.remove(at: index)
+            currentPuzzle.foundFactors.append(f)
+            currentPuzzle.possibleFactors.remove(at: index)
             return true
         }
         return false
