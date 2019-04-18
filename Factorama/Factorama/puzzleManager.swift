@@ -65,6 +65,31 @@ class PuzzleManager{
     }
     
     
+    func setPuzzle(difficulty: String, num: Int){
+        switch(difficulty){
+        case "Easy":
+            if  let puzzle = easyPuzzles.first(where: {$0.numToSplit == num}){
+                currentPuzzle = puzzle
+            }else{
+                print("Called wrong puzzle");
+            }
+        case "Medium":
+            if  let puzzle = mediumPuzzles.first(where: {$0.numToSplit == num}){
+                currentPuzzle = puzzle
+            }else{
+                print("Called wrong puzzle");
+            }
+        case "Hard":
+            if  let puzzle = hardPuzzles.first(where: {$0.numToSplit == num}){
+                currentPuzzle = puzzle
+            }else{
+                print("Called wrong puzzle");
+            }
+        default:
+            print("Unable to set puzzle");
+        }
+    }
+    
     
 }
 var manager = PuzzleManager()
