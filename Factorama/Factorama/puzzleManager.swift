@@ -41,9 +41,11 @@ class PuzzleManager{
         for x in 1...144{
             let puzzle = Puzzle(numToSplit: x)
             switch(puzzle.numFactors){
-            case 0...2:
+            case 1:
+                var _ = ""
+            case 2...3:
                 easyPuzzles.append(puzzle)
-            case 3...4:
+            case 4...5:
                 mediumPuzzles.append(puzzle)
             default:
                 hardPuzzles.append(puzzle)
