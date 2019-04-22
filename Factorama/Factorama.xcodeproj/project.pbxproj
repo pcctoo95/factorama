@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32111085226CC5A00086C5B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32111084226CC5A00086C5B1 /* Images.xcassets */; };
 		3F86DA29226660700099D0A6 /* puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA27226660700099D0A6 /* puzzle.swift */; };
 		3F86DA2A226660700099D0A6 /* puzzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA28226660700099D0A6 /* puzzleManager.swift */; };
 		3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE990D82266579A0045BD36 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32111084226CC5A00086C5B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F86DA27226660700099D0A6 /* puzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzle.swift; sourceTree = "<group>"; };
 		3F86DA28226660700099D0A6 /* puzzleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzleManager.swift; sourceTree = "<group>"; };
 		3FE990D5226657990045BD36 /* Factorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				3FE990DF2266579B0045BD36 /* Assets.xcassets */,
 				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
 				3FE990E42266579B0045BD36 /* Info.plist */,
+				32111084226CC5A00086C5B1 /* Images.xcassets */,
 			);
 			path = Factorama;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE990E32266579B0045BD36 /* LaunchScreen.storyboard in Resources */,
+				32111085226CC5A00086C5B1 /* Images.xcassets in Resources */,
 				3FE990E02266579B0045BD36 /* Assets.xcassets in Resources */,
 				3FE990DE2266579A0045BD36 /* Main.storyboard in Resources */,
 			);
@@ -444,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCACKGT6G2;
 				INFOPLIST_FILE = Factorama/Info.plist;
@@ -462,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCACKGT6G2;
 				INFOPLIST_FILE = Factorama/Info.plist;
