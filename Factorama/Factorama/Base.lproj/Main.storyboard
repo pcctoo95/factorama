@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number to factor:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-Wa-s0w">
-                                <rect key="frame" x="78" y="288" width="165" height="55"/>
+                                <rect key="frame" x="125" y="288" width="165" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -38,8 +38,8 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-r6-Kdk">
-                                <rect key="frame" x="138" y="363" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-r6-Kdk">
+                                <rect key="frame" x="152.55093099671376" y="358" width="106.99999999999977" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -54,11 +54,12 @@
                         <outlet property="NumberToFactorLabelOutlet" destination="pTc-Wa-s0w" id="JdY-G6-acJ"/>
                         <outlet property="PickerOutlet" destination="t87-dK-fQL" id="M5z-tE-edF"/>
                         <outlet property="StartButtonOutet" destination="VYI-ZK-Gyn" id="ebP-3C-GYT"/>
+                        <outlet property="totalScoreLabel" destination="ZuH-r6-Kdk" id="RZ3-DY-IZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8E-hS-wwF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="236"/>
+            <point key="canvasLocation" x="1808.6956521739132" y="235.71428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH7-7O-QXh">
@@ -143,7 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gke-hl-TKq">
-                                <rect key="frame" x="183" y="89" width="62" height="21"/>
+                                <rect key="frame" x="183" y="103" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -191,6 +192,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-c9-ML9">
+                                <rect key="frame" x="32" y="103" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hJE-uq-dtI"/>
@@ -203,7 +211,7 @@
                         <outlet property="factorR" destination="dGB-A1-t98" id="OLV-EG-6rG"/>
                         <outlet property="factorView" destination="2ry-e4-Y8h" id="Ys0-hw-gEG"/>
                         <outlet property="numberLabel" destination="gke-hl-TKq" id="c18-jH-Cgg"/>
-                        <outlet property="scoreLabel" destination="Ldt-e1-gJq" id="XlZ-Vp-Tb3"/>
+                        <outlet property="scoreLabel" destination="v1q-c9-ML9" id="Nwe-dP-bSn"/>
                         <outlet property="submitButton" destination="Pou-Kl-GoS" id="1nn-Ak-7dM"/>
                         <outlet property="totalL" destination="BEo-IL-uDf" id="gwk-5Z-K9H"/>
                         <outlet property="totalR" destination="YjS-9K-hwS" id="imA-54-NGV"/>
@@ -211,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXc-eg-KKP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2613" y="236"/>
+            <point key="canvasLocation" x="2611.594202898551" y="235.71428571428569"/>
         </scene>
     </scenes>
     <resources>
