@@ -9,9 +9,11 @@
 import Foundation
 
 class PuzzleManager{
-    var easyPuzzles : Array<Puzzle>
-    var mediumPuzzles : Array<Puzzle>
-    var hardPuzzles : Array<Puzzle>
+    var easyPuzzles = Array<Puzzle>()
+    var mediumPuzzles = Array<Puzzle>()
+    var hardPuzzles = Array<Puzzle>()
+    var currentSetting = 0
+    var dificulty = ["Easy", "Medium", "Hard"]
     var currentPuzzle: Puzzle
     var totalScore :Int{
         get{
@@ -36,20 +38,18 @@ class PuzzleManager{
         
     }
     init(){
-        easyPuzzles = Array<Puzzle>()
-        mediumPuzzles = Array<Puzzle>()
-        hardPuzzles = Array<Puzzle>()
         for x in 1...144{
             let puzzle = Puzzle(numToSplit: x)
             switch(puzzle.numFactors){
-            case 0...2:
+            case 1:
+                var _ = ""
+            case 2...3:
                 easyPuzzles.append(puzzle)
-            case 3...4:
+            case 4...5:
                 mediumPuzzles.append(puzzle)
             default:
                 hardPuzzles.append(puzzle)
             }
-            
         }
         currentPuzzle = easyPuzzles[0]
     }
@@ -64,6 +64,25 @@ class PuzzleManager{
         return false
     }
     
+    
+    func setPuzzle(difficulty: String, num: Int){
+        var puzzle : Puzzle?
+        switch(difficulty){
+        case "Easy":
+            puzzle = easyPuzzles[num]
+        case "Medium":
+            puzzle = mediumPuzzles[num]
+        case "Hard":
+            puzzle = hardPuzzles[num]
+        default:
+            puzzle = nil
+        }
+        if puzzle != nil {
+            currentPuzzle = puzzle!
+        }else{
+            print("Unable to set puzzle")
+        }
+    }
     
     
 }
