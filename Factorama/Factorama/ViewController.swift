@@ -25,8 +25,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         PickerOutlet.dataSource = self
         
         PickerOutlet.selectRow(0, inComponent: 0, animated: false)
-        totalScoreLabel.text! = "Score:  \(manager.totalScore.description)"
+        totalScoreLabel.text! = "Score:  \(manager.totalScore.description)%"
     }
+    override func viewWillAppear(_ animated: Bool) {
+        totalScoreLabel.text! = "Score:  \(manager.totalScore.description)%"
+    }
+        
+        
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
@@ -95,9 +101,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     }
     
-    
-    
-    
-    
 }
+    
+    
+    
+
+
 
