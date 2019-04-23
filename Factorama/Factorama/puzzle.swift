@@ -81,7 +81,7 @@ class Puzzle{
         let base = Int.random(in: 1 ... 5)
         let difference = leftTotal - rightTotal
         if(difference < 0){
-            leftOfset = (base + difference) * -1
+            leftOfset = base + (difference * -1)
             rightOfset = base
         }else{
             leftOfset = base
