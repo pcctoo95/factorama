@@ -26,11 +26,15 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     @IBAction func submitFactors(){
         if Int(factorL.text!) != nil && Int(factorR.text!) != nil{
-            _ = manager.submitFactor(lhs: Int(factorL.text!)!, rhs: Int(factorR.text!)!)
+            let success = manager.submitFactor(lhs: Int(factorL.text!)!, rhs: Int(factorR.text!)!)
             factorView.reloadData()
             updateLabels()
             factorL.text! = ""
             factorR.text! = ""
+            if !success{
+                factorR.shake()
+                factorL.shake()
+            }
         }
         
         
@@ -75,4 +79,19 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     
+}
+
+public extension UIView {
+    
+    func shake(count : Float = 4,for duration : TimeInterval = 0.5,withTranslation translation : Float = 5) {
+        
+        let animation : CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.repeatCount = count
+        animation.duration = duration/TimeInterval(animation.repeatCount)
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: CGFloat(-translation), y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: CGFloat(translation), y: self.center.y))
+        layer.add(animation, forKey: "shake")
+    }
 }
