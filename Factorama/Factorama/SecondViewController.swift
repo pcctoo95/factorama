@@ -25,16 +25,17 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         return manager.currentPuzzle.foundFactors.count
     }
     @IBAction func submitFactors(){
+        var success = false
         if Int(factorL.text!) != nil && Int(factorR.text!) != nil{
-            let success = manager.submitFactor(lhs: Int(factorL.text!)!, rhs: Int(factorR.text!)!)
+            success = manager.submitFactor(lhs: Int(factorL.text!)!, rhs: Int(factorR.text!)!)
             factorView.reloadData()
             updateLabels()
             factorL.text! = ""
             factorR.text! = ""
-            if !success{
-                factorR.shake()
-                factorL.shake()
-            }
+        }
+        if !success{
+            factorR.shake()
+            factorL.shake()
         }
         
         
