@@ -25,10 +25,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         PickerOutlet.dataSource = self
         
         PickerOutlet.selectRow(0, inComponent: 0, animated: false)
-        totalScoreLabel.text! = "Score:  \(manager.totalScore.description)%"
+        totalScoreLabel.text! = "Score: \n \(manager.totalScore.description)%"
     }
     override func viewWillAppear(_ animated: Bool) {
-        totalScoreLabel.text! = "Score:  \(manager.totalScore.description)%"
+        totalScoreLabel.text! = "Score: \n \(manager.totalScore.description)%"
     }
         
         
@@ -103,7 +103,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         default:
             print("Whoops")
         }
-        NumberToFactorLabelOutlet.text = "Number to Factor:\n\(manager.currentPuzzle.numToSplit)"
+        NumberToFactorLabelOutlet.text = "Number to Factor: \n \(manager.currentPuzzle.numToSplit)"
     }
     
     
