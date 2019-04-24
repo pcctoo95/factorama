@@ -42,18 +42,18 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     func updateLabels(){
         totalR.text = manager.currentPuzzle.totalR.description
         totalL.text = manager.currentPuzzle.totalL.description
-        scoreLabel.text = "Score: \(manager.currentPuzzle.currentScore.description)"
+        scoreLabel.text = "Score: \(manager.currentPuzzle.currentScore.description) / \(manager.currentPuzzle.possibleScore.description)"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.numberLabel.text = manager.currentPuzzle.numToSplit.description
+        self.numberLabel.text = "Number to Factor: \(manager.currentPuzzle.numToSplit.description)"
         self.factorView.allowsSelection = true
         self.factorView.register(UITableViewCell.self, forCellReuseIdentifier: "Prototype")
         self.factorView.delegate = self
         self.factorView.dataSource = self
-        OffsetL.text! = manager.currentPuzzle.leftOfset.description
-        OffsetR.text! = manager.currentPuzzle.rightOfset.description
+        OffsetL.text! = "+ \(manager.currentPuzzle.leftOfset.description)"
+        OffsetR.text! = "+ \(manager.currentPuzzle.rightOfset.description)"
         
         updateLabels()
     }
