@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="VZR-p0-0bp" customClass="ViewController" customModule="Factorama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CHL-nn-vif">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYI-ZK-Gyn">
-                                <rect key="frame" x="146" y="498" width="122" height="38"/>
+                                <rect key="frame" x="146" y="586" width="122" height="38"/>
                                 <color key="backgroundColor" red="0.66227410269999998" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="KMG-7e-SQ8"/>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8E-hS-wwF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.6956521739132" y="235.71428571428569"/>
+            <point key="canvasLocation" x="2718.840579710145" y="235.71428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH7-7O-QXh">
@@ -104,19 +104,19 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VZR-p0-0bp" kind="relationship" relationship="rootViewController" id="DwS-R0-68G"/>
+                        <segue destination="q2N-1y-Tis" kind="relationship" relationship="rootViewController" id="Ge0-DR-9uh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CR-RG-SEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059" y="236"/>
+            <point key="canvasLocation" x="1236" y="236"/>
         </scene>
         <!--Second-->
         <scene sceneID="TPP-79-FXg">
             <objects>
                 <viewController id="Nnj-5G-rcJ" customClass="SecondViewController" customModule="Factorama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trh-cs-2Yw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-6e-TUJ">
@@ -246,10 +246,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXc-eg-KKP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2611.594202898551" y="235.71428571428569"/>
+            <point key="canvasLocation" x="3521.739130434783" y="235.71428571428569"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="fQq-ng-Y1k">
+            <objects>
+                <viewController id="q2N-1y-Tis" customClass="SplashViewController" customModule="Factorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ur3-JJ-O1m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itunes" translatesAutoresizingMaskIntoConstraints="NO" id="1Ww-6E-y8j">
+                                <rect key="frame" x="-49" y="284" width="512" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="ACi-C2-XkJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Factorama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-O9-jAS">
+                                <rect key="frame" x="92" y="236" width="255" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="0.66227410269999998" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ww-6E-y8j" firstAttribute="centerY" secondItem="ur3-JJ-O1m" secondAttribute="centerY" id="225-V7-nPT"/>
+                            <constraint firstItem="1Ww-6E-y8j" firstAttribute="centerX" secondItem="ur3-JJ-O1m" secondAttribute="centerX" id="931-zA-LrT"/>
+                            <constraint firstItem="1Ww-6E-y8j" firstAttribute="centerX" secondItem="ur3-JJ-O1m" secondAttribute="centerX" id="FgT-4r-8Nj"/>
+                            <constraint firstItem="1Ww-6E-y8j" firstAttribute="centerY" secondItem="ur3-JJ-O1m" secondAttribute="centerY" id="ufd-aM-JNF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IBK-KU-PJh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gjj-px-I2w"/>
+                    <connections>
+                        <outlet property="logo" destination="1Ww-6E-y8j" id="Oim-K0-Vfn"/>
+                        <segue destination="VZR-p0-0bp" kind="showDetail" identifier="gametime" id="nQc-Wn-g9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfa-tQ-6Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="236"/>
         </scene>
     </scenes>
     <resources>
+        <image name="itunes" width="512" height="512"/>
         <image name="second" width="16" height="16"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

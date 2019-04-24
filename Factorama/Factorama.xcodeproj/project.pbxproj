@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32111085226CC5A00086C5B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32111084226CC5A00086C5B1 /* Images.xcassets */; };
+		3F2DEC602271112800E5EB26 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DEC5F2271112800E5EB26 /* SplashViewController.swift */; };
 		3F86DA29226660700099D0A6 /* puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA27226660700099D0A6 /* puzzle.swift */; };
 		3F86DA2A226660700099D0A6 /* puzzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA28226660700099D0A6 /* puzzleManager.swift */; };
 		3F86DA2C2268F5C10099D0A6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		32111084226CC5A00086C5B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F2DEC5F2271112800E5EB26 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		3F86DA27226660700099D0A6 /* puzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzle.swift; sourceTree = "<group>"; };
 		3F86DA28226660700099D0A6 /* puzzleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = puzzleManager.swift; sourceTree = "<group>"; };
 		3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3FE990D82266579A0045BD36 /* AppDelegate.swift */,
 				3FE990DA2266579A0045BD36 /* ViewController.swift */,
 				3FE990DC2266579A0045BD36 /* Main.storyboard */,
+				3F2DEC5F2271112800E5EB26 /* SplashViewController.swift */,
 				3FE9910822665DAC0045BD36 /* factoring.swift */,
 				3FE990DF2266579B0045BD36 /* Assets.xcassets */,
 				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 				3F86DA29226660700099D0A6 /* puzzle.swift in Sources */,
 				3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */,
 				3F86DA2C2268F5C10099D0A6 /* SecondViewController.swift in Sources */,
+				3F2DEC602271112800E5EB26 /* SplashViewController.swift in Sources */,
 				3FE9910922665DAC0045BD36 /* factoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
