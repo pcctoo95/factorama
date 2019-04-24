@@ -117,7 +117,6 @@
 				3FE990E12266579B0045BD36 /* LaunchScreen.storyboard */,
 				3FE990E42266579B0045BD36 /* Info.plist */,
 				32111084226CC5A00086C5B1 /* Images.xcassets */,
-				3FE9910622665DA30045BD36 /* FactorGame.swift */,
 				3F86DA2B2268F5C10099D0A6 /* SecondViewController.swift */,
 			);
 			path = Factorama;
@@ -278,7 +277,6 @@
 				3F86DA29226660700099D0A6 /* puzzle.swift in Sources */,
 				3FE990D92266579A0045BD36 /* AppDelegate.swift in Sources */,
 				3F86DA2C2268F5C10099D0A6 /* SecondViewController.swift in Sources */,
-				3FE9910722665DA30045BD36 /* FactorGame.swift in Sources */,
 				3FE9910922665DAC0045BD36 /* factoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VCACKGT6G2;
+				DEVELOPMENT_TEAM = 296HS4V4T4;
 				INFOPLIST_FILE = Factorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VCACKGT6G2;
+				DEVELOPMENT_TEAM = 296HS4V4T4;
 				INFOPLIST_FILE = Factorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

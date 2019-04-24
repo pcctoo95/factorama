@@ -77,6 +77,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         case 0:
             manager.currentSetting = row
             pickerView.reloadComponent(1)
+            switch manager.currentSetting{
+                case 0:
+                    manager.setPuzzle(difficulty: "Easy", num: pickerView.selectedRow(inComponent: 1))
+                case 1:
+                    manager.setPuzzle(difficulty: "Medium", num: pickerView.selectedRow(inComponent: 1))
+                case 2:
+                    manager.setPuzzle(difficulty: "Hard", num: pickerView.selectedRow(inComponent: 1))
+                default:
+                    manager.setPuzzle(difficulty: "Easy", num: pickerView.selectedRow(inComponent: 1))
+            }
         case 1:
             if let selectedRow = Int(pickerView.selectedRow(inComponent: 1).description){
                 switch manager.currentSetting{
