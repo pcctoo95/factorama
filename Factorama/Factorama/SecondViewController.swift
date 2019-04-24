@@ -42,7 +42,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     func updateLabels(){
         totalR.text = manager.currentPuzzle.totalR.description
         totalL.text = manager.currentPuzzle.totalL.description
-        scoreLabel.text = "Score: \(manager.totalScore.description)"
+        scoreLabel.text = "Score: \(manager.currentPuzzle.currentScore.description)"
     }
     
     override func viewDidLoad() {
