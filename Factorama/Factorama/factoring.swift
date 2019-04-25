@@ -14,7 +14,7 @@ struct Factorizor {
     var factors : [Int]
     var numberOfFactorPairs : Int {
         return factorPairs.count
-    }
+    } 
     
     init(numberToFactor: Int) {
         self.numberToFactor = numberToFactor
