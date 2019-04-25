@@ -30,8 +30,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewWillAppear(_ animated: Bool) {
         totalScoreLabel.text! = "Score: \n \(manager.totalScore.description)%"
     }
-        
-        
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

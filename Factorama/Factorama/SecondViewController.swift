@@ -18,9 +18,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var totalR: UILabel!
     @IBOutlet var totalL: UILabel!
-    
     @IBOutlet var OffsetR: UILabel!
     @IBOutlet var OffsetL: UILabel!
+    var baseOrigin = CGFloat(0)
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.currentPuzzle.foundFactors.count
     }
@@ -51,10 +52,26 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         factorL.resignFirstResponder()
     }
     
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == baseOrigin {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != baseOrigin {
+            self.view.frame.origin.y = baseOrigin
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.numberLabel.text = "Number to Factor: \(manager.currentPuzzle.numToSplit.description)"
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        self.numberLabel.text = "Factor \(manager.currentPuzzle.numToSplit.description)"
         self.factorView.allowsSelection = true
         self.factorView.register(UITableViewCell.self, forCellReuseIdentifier: "Prototype")
         self.factorView.delegate = self
@@ -63,6 +80,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         OffsetR.text! = "+ \(manager.currentPuzzle.rightOfset.description)"
         
         updateLabels()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        baseOrigin = self.view.frame.origin.y
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
