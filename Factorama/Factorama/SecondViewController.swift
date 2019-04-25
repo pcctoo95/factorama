@@ -111,7 +111,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
 
 public extension UIView {
     
-    func shake(count : Float = 4,for duration : TimeInterval = 0.5,withTranslation translation : Float = 5) {
+    func shake(count : Float = 4,for duration : TimeInterval = 0.4,withTranslation translation : Float = 5) {
         
         let animation : CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.x")
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
