@@ -46,6 +46,12 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         scoreLabel.text = "Score: \(manager.currentPuzzle.currentScore.description) / \(manager.currentPuzzle.possibleScore.description)"
     }
     
+    @IBAction func DismissKeyboard(_ sender: UITapGestureRecognizer) {
+        factorR.resignFirstResponder()
+        factorL.resignFirstResponder()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.numberLabel.text = "Number to Factor: \(manager.currentPuzzle.numToSplit.description)"
