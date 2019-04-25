@@ -11,12 +11,14 @@ import UIKit
 class SplashViewController: UIViewController {
     
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var splashTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UIView.animate(withDuration: 2.5, animations: {
-            self.logo.transform = CGAffineTransform(translationX: 0, y: self.view.bounds.size.height)
-            self.view.backgroundColor = UIColor.white
+            self.splashTitle.alpha = 1
+            
+            self.view.alpha = 0
         }) { (success) in
             self.performSegue(withIdentifier: "gametime", sender: nil)
             
